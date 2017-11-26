@@ -1,0 +1,150 @@
+{
+  "name": "fitness-app",
+  "version": "1.0.0",
+  "description": "React Native and Go based fitness app.",
+  "author": "Mackie Drew",
+  "license": "MIT",
+  "main": "./client/index.js",
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
+  },
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "node node_modules/jest/bin/jest.js --watch",
+    "lint": "./node_modules/.bin/eslint . --ext .js,.jsx,.mjs",
+    "lint:fix": "yarn lint -- --fix"
+  },
+  "dependencies": {
+    "react": "16.0.0-beta.5",
+    "react-native": "^0.49.5",
+    "react-native-material-ui": "^1.14.0",
+    "react-native-vector-icons": "^4.4.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.0.2",
+    "eslint": "4.12.0",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest-expo": "^22.0.0",
+    "react-test-renderer": "16.0.0-beta.5",
+    "eslint-config-prettier": "2.8.0",
+    "eslint-plugin-filenames": "1.2.0",
+    "eslint-plugin-flowtype": "2.39.1",
+    "eslint-plugin-fp": "2.3.0",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-jsdoc": "3.2.0",
+    "eslint-plugin-json": "1.2.0",
+    "eslint-plugin-prettier": "2.3.1",
+    "eslint-plugin-react": "7.5.1",
+    "prettier": "1.8.2"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "env": {
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "plugins": [
+      "prettier",
+      "flowtype",
+      "react",
+      "import",
+      "fp",
+      "filenames",
+      "jsdoc"
+    ],
+    "extends": [
+      "prettier",
+      "prettier/flowtype",
+      "prettier/react",
+      "plugin:import/errors",
+      "plugin:react/recommended"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "printWidth": 100,
+          "semi": false,
+          "trailingComma": "all"
+        }
+      ],
+      "no-console": [
+        "error",
+        {
+          "allow": [
+            "warn",
+            "error"
+          ]
+        }
+      ],
+      "no-undef": "error",
+      "no-unreachable": "error",
+      "no-unused-vars": "error",
+      "no-extra-semi": "error",
+      "no-func-assign": "error",
+      "no-invalid-regexp": "error",
+      "valid-typeof": "error",
+      "dot-notation": "error",
+      "valid-jsdoc": "error",
+      "no-floating-decimal": "error",
+      "no-implicit-coercion": "error",
+      "no-implied-eval": "error",
+      "no-iterator": "error",
+      "prefer-spread": "error",
+      "use-isnan": "error",
+      "no-use-before-define": "error",
+      "no-shadow-restricted-names": "error",
+      "no-shadow": "error",
+      "no-restricted-globals": "error",
+      "no-delete-var": "error",
+      "no-useless-return": "error",
+      "no-useless-concat": "error",
+      "no-unused-expressions": "error",
+      "no-self-assign": "error",
+      "for-direction": "error",
+      "no-compare-neg-zero": "error",
+      "no-cond-assign": "error",
+      "no-dupe-args": "error",
+      "no-duplicate-case": "error",
+      "no-empty": "error",
+      "no-redeclare": "error",
+      "no-var": "error",
+      "fp/no-get-set": "error",
+      "fp/no-valueof-field": "error",
+      "fp/no-proxy": "error",
+      "fp/no-delete": "error",
+      "fp/no-events": "error",
+      "fp/no-arguments": "error",
+      "react/prop-types": "off",
+      "react/no-danger": "error",
+      "react/sort-comp": "error",
+      "react/void-dom-elements-no-children": "error",
+      "react/self-closing-comp": "error",
+      "jsdoc/check-param-names": "error",
+      "jsdoc/check-tag-names": "error",
+      "jsdoc/check-types": "error",
+      "jsdoc/newline-after-description": "error",
+      "jsdoc/require-description-complete-sentence": "error",
+      "jsdoc/require-example": "off",
+      "jsdoc/require-hyphen-before-param-description": "off",
+      "jsdoc/require-param": "error",
+      "jsdoc/require-param-description": "error",
+      "jsdoc/require-param-type": "error",
+      "jsdoc/require-returns-description": "error",
+      "jsdoc/require-returns-type": "error"
+    },
+    "settings": {
+      "flowtype": {
+        "onlyFilesWithFlowAnnotation": false
+      }
+    }
+  }
+}
