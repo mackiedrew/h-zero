@@ -1,10 +1,14 @@
 {
-  "name": "fitness-app",
+  "name": "h-zero",
   "version": "1.0.0",
-  "description": "React Native and Go based fitness app.",
+  "description": "Health app with an Express-GraphQL backend and a React-Native frontend.",
   "author": "Mackie Drew",
   "license": "MIT",
-  "main": "./client/index.js",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mackiedrew/h-zero"
+  },
   "rnpm": {
     "assets": [
       "./assets/fonts/"
@@ -16,20 +20,26 @@
     "ios": "react-native run-ios",
     "test": "node node_modules/jest/bin/jest.js --watch",
     "lint": "./node_modules/.bin/eslint . --ext .js,.jsx,.mjs",
-    "lint:fix": "yarn lint -- --fix"
+    "lint:fix": "yarn lint -- --fix",
+    "start:server": "babel-node ./server/index.js --presets es2015,stage-0"
   },
   "dependencies": {
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.11.7",
     "react": "16.0.0-beta.5",
     "react-native": "^0.49.5",
     "react-native-material-ui": "^1.14.0",
-    "react-native-vector-icons": "^4.4.2"
+    "react-native-vector-icons": "^4.4.2",
+    "react-router-native": "^4.2.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-eslint": "8.0.2",
-    "eslint": "4.12.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react-native-stage-0": "^1.0.1",
-    "jest-expo": "^22.0.0",
-    "react-test-renderer": "16.0.0-beta.5",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "4.12.0",
     "eslint-config-prettier": "2.8.0",
     "eslint-plugin-filenames": "1.2.0",
     "eslint-plugin-flowtype": "2.39.1",
@@ -39,7 +49,10 @@
     "eslint-plugin-json": "1.2.0",
     "eslint-plugin-prettier": "2.3.1",
     "eslint-plugin-react": "7.5.1",
-    "prettier": "1.8.2"
+    "eslint-plugin-react-native": "3.2.0",
+    "jest-expo": "^22.0.0",
+    "prettier": "1.8.2",
+    "react-test-renderer": "16.0.0-beta.5"
   },
   "jest": {
     "preset": "jest-expo"
@@ -49,7 +62,11 @@
     "env": {
       "node": true,
       "es6": true,
-      "jest": true
+      "jest": true,
+      "react-native/react-native": true
+    },
+    "ecmaFeatures": {
+      "jsx": true
     },
     "plugins": [
       "prettier",
@@ -58,7 +75,8 @@
       "import",
       "fp",
       "filenames",
-      "jsdoc"
+      "jsdoc",
+      "react-native"
     ],
     "extends": [
       "prettier",

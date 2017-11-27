@@ -5,6 +5,8 @@
     "Truthy",
     "crna",
     "fitnessapp",
-    "flowtype"
+    "flowtype",
+    "graphiql",
+    "lockfile"
   ]
 }

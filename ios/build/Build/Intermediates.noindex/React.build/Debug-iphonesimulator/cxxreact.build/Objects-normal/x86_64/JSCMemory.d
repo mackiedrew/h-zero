@@ -1,5 +1,0 @@
-dependencies: \
-  /Users/mackiedrew/Code/fitness-app/node_modules/react-native/ReactCommon/cxxreact/JSCMemory.cpp \
-  /Users/mackiedrew/Code/fitness-app/node_modules/react-native/ReactCommon/cxxreact/JSCMemory.h \
-  /Users/mackiedrew/Code/fitness-app/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
-  /Users/mackiedrew/Code/fitness-app/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h
