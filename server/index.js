@@ -8,11 +8,12 @@ import graphqlHTTP from "express-graphql";
 // API
 import Schema from "./models/Schema";
 
-// Constants
-const PORT = 4000;
-const SERVER_IP = "localhost";
-const DATABASE = "h-zero";
-const GRAPHQL_PATH = "graphql";
+// Configuration
+import { name } from "../package.json";
+const PORT = process.env.PORT || 4000;
+const SERVER_IP = process.env.PORT || "localhost";
+const DATABASE = process.env.DATABASE || name || "health-zero";
+const GRAPHQL_PATH = process.env.GRAPHQL_PATH || "graphql";
 
 // Connect MongoDB with Mongoose
 mongoose.connect(`mongodb://${SERVER_IP}/${DATABASE}`);
