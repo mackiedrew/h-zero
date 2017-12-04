@@ -1,7 +1,7 @@
-import React from "react"
+import React from "react";
 
-import App from "./components/App"
+import App from "./components/App";
 
-export const AppContainer = () => <App />
+export const AppContainer = () => <App />;
 
-export default AppContainer
+export default AppContainer;

@@ -1,12 +1,29 @@
 {
   "cSpell.words": [
+    "ASTs",
     "Backend",
+    "Centi",
+    "Graphi",
+    "Jeor",
+    "Kcal",
+    "Kilocalories",
     "Mackie",
+    "Mifflin",
+    "QLID",
     "Truthy",
     "crna",
+    "destructure",
+    "ffmi",
     "fitnessapp",
     "flowtype",
     "graphiql",
-    "lockfile"
-  ]
+    "graphql",
+    "kcalories",
+    "kcals",
+    "lockfile",
+    "rdee",
+    "rnpm",
+    "tdee"
+  ],
+  "javascript.validate.enable": false
 }
