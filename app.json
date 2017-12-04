@@ -1,7 +1,4 @@
 {
-  "expo": {
-    "sdkVersion": "22.0.0"
-  },
-  "name": "fitnessapp",
-  "displayName": "H0"
+  "name": "healthZero",
+  "displayName": "healthZero"
 }

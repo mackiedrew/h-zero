@@ -1,6 +1,7 @@
 {
-  "name": "h-zero",
+  "name": "health-zero",
   "version": "1.0.0",
+  "private": true,
   "description": "Health app with an Express-GraphQL backend and a React-Native frontend.",
   "author": "Mackie Drew",
   "license": "MIT",

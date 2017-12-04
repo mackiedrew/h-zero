@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { ScrollView, StyleSheet, View, StatusBar } from "react-native";
-import { Toolbar, COLOR, ThemeProvider, ActionButton } from "react-native-material-ui";
+import { Toolbar, COLOR, ThemeProvider } from "react-native-material-ui";
 
 // Components
-import { NativeRouter, Route, Link } from "react-router-native";
+import { NativeRouter, Route } from "react-router-native";
 import BottomNavigator from "./BottomNavigator";
 import SpeedDial from "./SpeedDial";
 

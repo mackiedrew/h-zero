@@ -1,4 +1,4 @@
-package com.fitnessapp;
+package com.healthzero;
 
 import android.app.Application;
 

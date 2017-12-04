@@ -1,3 +1,4 @@
 import { AppRegistry } from "react-native";
-import AppContainer from "./client/index";
-AppRegistry.registerComponent("fitnessapp", () => AppContainer);
+import App from "./client/index.js";
+
+AppRegistry.registerComponent("healthZero", () => App);
